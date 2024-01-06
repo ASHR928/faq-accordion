@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:wght@600;800&family=Outfit:wght@400;700&family=Work+Sans:wght@400;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+body{
+    background-image: url("./assets/images/background-pattern-desktop.svg");
+    font-family: 'Outfit', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+    font-size: 15px;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100%;
+    
+}
+.container{
+    display: block;
+    width: 50%;
+    padding: 40px 15px;
+    min-width: 450px;
+    margin:200px auto;
+    color:hsl(292, 42%, 14%);
+    background-color: white;
+    border-radius:1rem ;
+    box-shadow: 0 30px 100px -50px black;
+}
+
+
+.Faq-text  {
+    display: flex;
+    align-items: center;
+    gap:15px;
+    text-align: center;
+    padding-left: 10px;
+    margin-bottom: 50px;
+ 
+}
+
+.accordion{
+    margin-bottom: 10px;
+}
+
+.accordion-header{
+    font-size: 20px;
+    font-weight: 700;
+    padding: 18px 0;
+    margin-bottom: 10px;
+    position: relative;
+    
+}
+.accordion-header:hover{
+    color: hsl(292, 16%, 49%);
+    cursor:pointer;
+}
+.accordion-header h3{
+    width: 95%;
+    font-weight: 95%;
+}
+
+.btn{
+    border: 0px;
+    width: 30px;
+    height: 30px;
+    background-image: url(./assets/images/icon-plus.svg);
+    background-size: cover;
+    position: absolute;
+    right: 10px;
+    top: 25px;
+    background-color: inherit;
+    cursor: pointer;
+}
+
+.accordion-content{
+    display: none;
+    margin-bottom: 15px;
+
+}
+
+.accordion-content.open{
+    display: block;
+}
+
+.btn.open{
+    background-image: url("./assets/images/icon-minus.svg");
+    transition: 0.3s ease;
+}
